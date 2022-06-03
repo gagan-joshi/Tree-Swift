@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Q1. Nodes Count'/>
+        <page name='Q2. Nodes Sum'/>
+        <page name='Q3. Tree Height'/>
+        <page name='Q4. Nodes Max'/>
+        <page name='Q5. Postorder Traversal'/>
+        <page name='Q6. Binary Tree From Inorder And Preorder'/>
+        <page name='HW1 Inorder Traversal'/>
+        <page name='HW2 Preorder Traversal'/>
+        <page name='HW3 Depth of Each Node'/>
+        <page name='HW4 Odd and Even Levels'/>
+        <page name='HW5 Identical Binary Trees'/>
+        <page name='HW6 Binary Tree From Inorder And Preorder'/>
+    </pages>
+</playground>
