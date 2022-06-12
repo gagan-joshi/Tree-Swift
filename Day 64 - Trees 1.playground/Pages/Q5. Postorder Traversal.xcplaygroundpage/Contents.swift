@@ -73,13 +73,13 @@ extension TreeNode: CustomStringConvertible {
     
     public var description: String {
         guard let left = left else {
-            return "\(data)"
+            return "\(val)"
         }
         guard let right = right else {
-            return "\(data)"
+            return "\(val)"
         }
         
-        return "(\(data) -> " + String(describing: left) + " ^ " + String(describing: right) + " )"
+        return "(\(val) -> " + String(describing: left) + " ^ " + String(describing: right) + " )"
     }
     
     
@@ -88,12 +88,12 @@ extension TreeNode: CustomStringConvertible {
 
 class TreeNode {
     
-    let data : Int
+    let val : Int
     var left: TreeNode?
     var right: TreeNode?
     
-    init(data: Int,left: TreeNode? = nil,right: TreeNode? = nil) {
-        self.data = data
+    init(val: Int,left: TreeNode? = nil,right: TreeNode? = nil) {
+        self.val = val
         self.left = left
         self.right = right
     }
@@ -101,21 +101,21 @@ class TreeNode {
 
 
 
-let first = TreeNode(data: 1)
-let second = TreeNode(data: 2)
-let third = TreeNode(data: 3)
-let fourth = TreeNode(data: 4)
-let fifth = TreeNode(data: 5)
-let sixth = TreeNode(data: 6)
-let seventh = TreeNode(data: 7)
-let eth = TreeNode(data: 8)
-let nth = TreeNode(data: 9)
-let tth = TreeNode(data: 10)
-let elth = TreeNode(data: 11)
+let first = TreeNode(val: 1)
+let second = TreeNode(val: 2)
+let third = TreeNode(val: 3)
+let fourth = TreeNode(val: 4)
+let fifth = TreeNode(val: 5)
+let sixth = TreeNode(val: 6)
+let seventh = TreeNode(val: 7)
+let eth = TreeNode(val: 8)
+let nth = TreeNode(val: 9)
+let tth = TreeNode(val: 10)
+let elth = TreeNode(val: 11)
 
 
 
-var root = TreeNode(data: 1,left: second,right: third)
+var root = TreeNode(val: 1,left: second,right: third)
 
 second.left = fourth
 second.right = fifth
@@ -144,7 +144,7 @@ func postorderTraversal(_ A: TreeNode?) -> [Int] {
         }
         postorder(root?.left)
         postorder(root?.right)
-        array.append(root!.data)
+        array.append(root!.val)
 
     }
     return array
